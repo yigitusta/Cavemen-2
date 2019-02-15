@@ -6,7 +6,7 @@
   "scripts": {
     "install": "cd client; npm i; cd ../server; npm i; cd ..; rmdir node_modules",
     "dev:client": "cd client; npm run dev;",
-    "dev:server": "cd ../server; npm run dev",
+    "dev:server": "cd server; npm run dev",
     "start": "cd client; npm run build; cd ../server; npm start"
   },
   "author": "yusta",

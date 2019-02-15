@@ -1,9 +1,4 @@
 
-import Phaser from 'phaser';
-import * as Graphics from "../utils/graphics";
-
-import CST from '../CST';
-import { spawn } from 'child_process';
 import meat from '../assets/images/meat.png';
 
 export default class StatusBar {
