@@ -99,7 +99,11 @@ export default class LoginScene extends Phaser.Scene {
   }
 
   submitForm(text) {
-    const socket = window.socket = io(`http://${window.location.hostname}:${process.env.PORT || 3000}`);
+    let serverUrl = window.location.origin;
+    if (window.location.port === "1234") { // Parcel's dev server port, we want to use the server's port instead.
+      serverUrl = window.location.origin.replace(":1234", ":3000");
+    }
+    const socket = window.socket = io(serverUrl);
 
     const player = new PlayerShape(null, text);
 
