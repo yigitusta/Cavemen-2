@@ -1,6 +1,6 @@
 # Cavemen 2
 
-Cavemen 2 is the contination of [Cavemen][cavemen].
+Cavemen 2 is the continuation of [Cavemen][cavemen].
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/yigitusta/Cavemen-2)
 
