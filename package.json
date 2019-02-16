@@ -4,7 +4,7 @@
   "description": "A multiplayer HTML5 game.",
   "main": "index.js",
   "scripts": {
-    "install": "cd client; npm i; cd ../server; npm i; cd ..; rmdir node_modules",
+    "install:all": "cd client; npm i; cd ../server; npm i; cd ..;",
     "dev:client": "cd client; npm run dev;",
     "dev:server": "cd server; npm run dev",
     "start": "cd client; npm run build; cd ../server; npm start"
