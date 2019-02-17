@@ -4,7 +4,7 @@ const socketio = require('socket.io');
 const expressServer = app.listen(process.env.PORT || 3000);
 const io = socketio(expressServer);
 
-const PlayerShape = require('../common/PlayerShape');
+const PlayerShape = require(`${__dirname}/../common/PlayerShape`);
 
 let players = [];
 let meats = [];
@@ -15,7 +15,7 @@ const day = {
 
 meats = meatCreate();
 
-app.use('/', express.static('../client/dist'))
+app.use('/', express.static(`${__dirname}/../dist`));
 
 app.get('/players', function (req, res) {
   res.send(JSON.stringify(players));
