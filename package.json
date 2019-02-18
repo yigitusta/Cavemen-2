@@ -9,7 +9,7 @@
     "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
     "build": "parcel build client/index.html",
     "start": "node server/index.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
+    "heroku-postbuild": "npm install && npm run build"
   },
   "author": "yusta",
   "license": "ISC",
