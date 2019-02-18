@@ -3,6 +3,5 @@
   "description": "Continuation of Cavemen",
   "repository": "https://github.com/yigitusta/Cavemen-2",
   "logo": "http://isc.tamu.edu/~lewing/linux/sit3-shine.7.gif",
-  "keywords": ["node", "express", "cavemen"],
-  "stack": "container"
+  "keywords": ["node", "express", "cavemen"]
 }
